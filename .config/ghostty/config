@@ -1,0 +1,14 @@
+theme = Catppuccin Mocha
+font-family = JetBrains Mono
+font-size = 14.5
+
+# keybindings for splits
+keybind = opt+h=goto_split:left
+keybind = opt+j=goto_split:down
+keybind = opt+k=goto_split:up
+keybind = opt+l=goto_split:right
+
+keybind = opt+shift+h=new_split:left
+keybind = opt+shift+j=new_split:down
+keybind = opt+shift+k=new_split:up
+keybind = opt+shift+l=new_split:right
