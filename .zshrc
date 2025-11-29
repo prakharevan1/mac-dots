@@ -110,10 +110,32 @@ export EDITOR=code
 # zoxide
 eval "$(zoxide init zsh)"
 alias cd=z
+# yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+alias yazi=y
+# bat
+export BAT_THEME="Catppuccin Mocha"
+# eza
+alias ls='eza'
 
+# I use trash cli since I sometimes delete things accidently
+alias rm='echo "This is not the command you are looking for."; false'
 # greetings!
 clear
-pfetch
 source /Users/evand/zsh/greeting.zsh
 
 export PATH=$PATH:/Users/evand/.spicetify
+export PATH="/opt/homebrew/opt/trash-cli/bin:$PATH"
+
+eval "$(/Users/evand/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
+
+# clocktemp
+alias clocktemp='clocktemp -tf 12 -df mm/dd -tu c -s true -lat 33.662 -lon -117.800 -c blue -b default'
+# cbonsai
+alias cbonsai="cbonsai -S -L 40 -t 0.1 -m \"hello, user :)\""
