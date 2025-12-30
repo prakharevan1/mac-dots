@@ -138,4 +138,9 @@ eval "$(/Users/evand/.local/bin/mise activate zsh)" # added by https://mise.run/
 # clocktemp
 alias clocktemp='clocktemp -tf 12 -df mm/dd -tu c -s true -lat 33.662 -lon -117.800 -c blue -b default'
 # cbonsai
-alias cbonsai="cbonsai -S -L 40 -t 0.1 -m \"hello, user :)\""
+alias cbonsai="cbonsai -S -L 40 -t 0.1 -m \"hello, $(whoami) :)\""
+alias cbonsainomsg="/usr/local/bin/cbonsai -S -L 40 -t 0.1"
+# bat
+alias cat=bat
+# ALIAS SUDO=DOAS!!!
+alias sudo=doas
