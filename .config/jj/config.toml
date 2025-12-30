@@ -1,0 +1,19 @@
+#:schema https://jj-vcs.github.io/jj/latest/config-schema.json
+
+[user]
+name = "Evan Dagur"
+email = "176645652+prakharevan1@users.noreply.github.com"
+
+[ui]
+editor = "code -w"
+show-cryptographic-signatures = true
+diff-editor = ":builtin"
+merge-editor = ":builtin"
+
+[signing]
+behavior = "own"
+backend = "gpg"
+# key = yeah good luck finding out
+
+[git]
+sign-on-push = true
