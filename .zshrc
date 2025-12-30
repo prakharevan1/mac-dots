@@ -144,3 +144,5 @@ alias cbonsainomsg="/usr/local/bin/cbonsai -S -L 40 -t 0.1"
 alias cat=bat
 # ALIAS SUDO=DOAS!!!
 alias sudo=doas
+# tree
+alias tree="eza -T"
