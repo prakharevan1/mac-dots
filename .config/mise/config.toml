@@ -1,0 +1,4 @@
+[tools]
+java = "lts"
+pipx = "latest"
+python = "3.14"
