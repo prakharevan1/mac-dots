@@ -14,6 +14,8 @@ reset=$'%{\e[0m%}'
 # Get current time (12-hour format) and day of the week
 current_time=$(date +"%I:%M %p")
 day_of_week=$(date +"%b %e, %A")
+# ${time_color}${current_time}${reset}
+
 
 # Pick a random adjective
 #adjectives=("beautiful" "gorgeous" "wonderful")
@@ -21,4 +23,4 @@ day_of_week=$(date +"%b %e, %A")
 # a ${random_adj}
 
 # Print the styled message
-print -P "It's ${time_color}${current_time}${reset} on ${day_color}${day_of_week}${reset}!"
+print -P "Today is ${day_color}${day_of_week}${reset}!"
