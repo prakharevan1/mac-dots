@@ -122,6 +122,12 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+# homebrew, brew doctor on BOTH ends to check if there is a error before or after updating
+alias bup="brew doctor && brew update && brew upgrade && brew cleanup; brew doctor"
+# update stuff
+function update() {
+    mise self-update; bup; z4h update
+}
 alias yazi=y
 # bat
 export BAT_THEME="Catppuccin Mocha"
