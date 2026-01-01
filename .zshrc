@@ -143,7 +143,8 @@ export PATH="/opt/homebrew/opt/trash-cli/bin:$PATH"
 eval "$(/Users/evand/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
 
 # clocktemp
-alias clocktemp='clocktemp -tf 12 -df mm/dd -tu f -s true -lat 33.662 -lon -117.800 -c blue -b default'
+# fixed libressl with macos issue, python3 with mise allows for openssl
+alias clocktemp='python3 "/Users/evand/Downloads/programs/ClockTemp/script/clocktemp.py" -tf 12 -df mm/dd -tu f -s true -lat 33.662 -lon -117.800 -c blue -b default'
 # cbonsai
 alias cbonsai="cbonsai -S -L 40 -t 0.1 -m \"hello, $(whoami) :)\""
 alias cbonsainomsg="/usr/local/bin/cbonsai -S -L 40 -t 0.1"
