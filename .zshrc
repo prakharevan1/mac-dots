@@ -126,7 +126,8 @@ function y() {
 alias bup="brew doctor && brew update && brew upgrade && brew cleanup; brew doctor"
 # update stuff
 function update() {
-    mise self-update; bup; z4h update
+    mise self-update; bup; rustup update;
+    z4h update; # do this LAST! z4h restarts the entire zsh session
 }
 alias yazi=y
 # bat
