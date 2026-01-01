@@ -143,7 +143,7 @@ export PATH="/opt/homebrew/opt/trash-cli/bin:$PATH"
 eval "$(/Users/evand/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
 
 # clocktemp
-alias clocktemp='clocktemp -tf 12 -df mm/dd -tu c -s true -lat 33.662 -lon -117.800 -c blue -b default'
+alias clocktemp='clocktemp -tf 12 -df mm/dd -tu f -s true -lat 33.662 -lon -117.800 -c blue -b default'
 # cbonsai
 alias cbonsai="cbonsai -S -L 40 -t 0.1 -m \"hello, $(whoami) :)\""
 alias cbonsainomsg="/usr/local/bin/cbonsai -S -L 40 -t 0.1"
@@ -153,3 +153,5 @@ alias cat=bat
 alias sudo=doas
 # tree
 alias tree="eza -T"
+# typing test
+alias ttest="python -m tttui"
