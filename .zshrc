@@ -151,9 +151,11 @@ alias cbonsai="cbonsai -S -L 40 -t 0.1 -m \"hello, $(whoami) :)\""
 alias cbonsainomsg="/usr/local/bin/cbonsai -S -L 40 -t 0.1"
 # bat
 alias cat=bat
-# ALIAS SUDO=DOAS!!!
+# DOAS I say, not as I do.
 alias sudo=doas
 # tree
 alias tree="eza -T"
 # typing test
 alias ttest="python -m tttui"
+# archstatus
+alias archstatus="archstatus -srwf"
