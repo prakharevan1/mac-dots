@@ -159,3 +159,5 @@ alias tree="eza -T"
 alias ttest="python -m tttui"
 # archstatus
 alias archstatus="archstatus -srwf"
+# archstatus script
+alias archstatus.sh="clear; ~/./archstatus.sh"
